@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta  http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <title>javascript/css</title>
+    <link rel="stylesheet" type="text/css" href="../../public/css/styles.css">   
+	<!-- Custom fonts for this template-->
+	<link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+	<!-- Custom styles for this template-->
+	<link href="../../public/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body cz-shortcut-listen="true">
+<h1 style="text-align:center;">Formulario con diferentes tipos de campos</h1>
+<form action="procesaformulario.php" method="post" enctype="multipart/form-data" name="form1">
+  <h3>Los nuevos input:</h3>
+  <p>Color (type="color"): <input type="color" name="colorfavorito">
+  </p>
+  <p>Fecha (type="date):
+    <input type="date" name="fecha" id="fecha">
+  </p>
+  <p>Fecha Hora (type="datetime"):
+    <input type="datetime" name="fechahora" id="fechahora">
+  </p>
+  <p>Fecha Hora local (type="datetime-local"):
+    <input type="datetime-local" name="fechahora2" id="fechahora2">
+  </p>
+  <p>Hora (type="time"):<input type="time" name="hora"></p>
+  <p>Mes (type="month"): <input type="month" name="mes"></p>
+  <p>Semana (type="week"):
+    <input type="week" name="semana">
+  </p>
+  <p>Correo electrónico (type="email"): <input type="email" name="correo">
+  </p>
+  <p>Número (type="number"):<input type="number" name="nota" min="1" max="10"> 
+  admite mínimo, máximo, salto, valor por defecto.</p>
+  <p>Rango (type="range"): <input type="range" name="rango" min="1" max="10">
+   admite mínimo, máximo, salto, valor por defecto. </p>
+  <p>Búsqueda (type="search"):  <input type="search" name="busqueda"> </p>
+  <p>Teléfono (type="tel"):<input type="tel" name="telefono"></p>
+  <p>Dirección web (type="url"): 
+    <input type="url" name="URL" id="URL">
+  </p>
+  <h3>Los nuevos componentes para formularios:</h3>
+  <p>Entrada a partir de datos de una lista, para este control utilizados dos elementos input list="relacion" para recopilar el dato y datalist para indicar los posibles valores: Pagina web: <input name="web" list="webs"><datalist id="webs">
+ <option value="http://www.suarezdefigueroa.es/" label="I.E.S. Suarez de Figueroa">
+ </option><option value="http://www.educacion.es/" label="Ministerio de educacion">
+</option></datalist></p>
+  <p>Encriptación, permite encriptar datos, genera 2 claves: mantiene la clave privada en el equipo y envia la clave pública.</p>
+  <p>Usuario: 
+    <input type="text" name="usuario" id="usuario">
+    Encriptación: 
+    <keygen name="seguridad">
+  </p>
+  <p>Salida de datos, para mostrar salidas interactivas relacionadas con otros controles.</p>
+  <p>
+<input type="number" name="a" value="0" onchange="rdo.value=parseInt(a.value)*parseInt(b.value)">*
+<input type="number" name="b" value="0" onchange="rdo.value=parseInt(a.value)*parseInt(b.value)">=
+<output name="rdo" for="a b"></output>
+</p>
+  <h3>Y los clásicos:</h3>
+  <p>Texto (type="text"):
+    <input type="text" name="texto" id="texto">
+  </p>
+  <p>Oculto (type="hidden"):  
+    <input name="oculto" type="hidden" id="oculto" value="oculto">
+  </p>
+  <p>Clave (type="password"):
+    <input type="password" name="clave" id="clave">
+  </p>
+  <p>Imagen (type="image"):
+    <input name="imagen" type="image" id="imagen" src="../imagenes/img_html5_html5.gif" alt="Imagen">
+  </p>
+  <p>Casilla de verificación (type="checkbox"): 
+    <input name="casilla" type="checkbox" id="casilla" value="casilla" checked="">
+  </p>
+  <p>Radio (type="radio"):
+    <input type="radio" name="radio" id="radio" value="1">
+1
+<input type="radio" name="radio" id="radio2" value="2">
+2
+<input type="radio" name="radio" id="radio3" value="3"> 
+3 </p>
+  <p>Archivo (type="file")  
+    <input type="file" name="archivo" id="archivo">
+  </p>
+  <p>Botón (type="button"): 
+    <input type="button" name="boton" id="boton" value="Botón">
+  </p>
+  <p>Borrado (type="reset"): 
+    <input type="reset" name="borrado" id="borrado" value="Restablecer">
+  </p>
+  <p>Envio (type="submit"):
+    <input type="submit" name="envio" id="envio" value="Enviar">
+  </p>
+</form>
+<p>&nbsp;</p>
+
+</body>
+
+
+<!-- Bootstrap core JavaScript-->
+<script src="../../public/vendor/jquery/jquery.min.js"></script>
+<script src="../../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="../../public/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="../../public/js/sb-admin-2.min.js"></script>
+<script src="../../public/js/javascript.js"></script>
+

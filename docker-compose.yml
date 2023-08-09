@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  web: 
+    image: html:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: dev
+    volumes:
+      - ./build/:/var/www/
+    ports:
+      - 2000:80  
+    networks:
+      - proyector 
+networks:
+  proyector:       

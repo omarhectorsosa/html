@@ -1,0 +1,17 @@
+
+article p:first-child::first-line { 
+  font-size: 120%; 
+  font-weight: bold; 
+}
+
+.box::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}   
+    
+
+
