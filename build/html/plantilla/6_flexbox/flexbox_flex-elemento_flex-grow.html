@@ -10,9 +10,47 @@
 
 	<!-- Custom styles for this template-->
 	<link href="../../public/css/sb-admin-2.min.css" rel="stylesheet">
-</head>d>
+</head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
+<style>
+  .flex-container {
+    display: flex;
+    height: 400px;
+    background-color: red;
+	  flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .flex-container div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+	background-color: green;
+    text-align: center;
+	color: white;
+	margin: 5px;
+  }
+
+</style>
+
+<body>  
+  <div class="flex-container">
+    <div style="flex-grow: 1">Flex 1</div>
+    <div style="flex-grow: 2">Flex 2</div>
+	<div style="flex-grow: 3">Flex 2</div>
+	<div style="flex-grow: 4">Flex 2</div>
+  </div>
+</body>
+
+</html>
 
 
 

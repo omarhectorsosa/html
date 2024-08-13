@@ -1,30 +1,40 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-  	<meta  http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <title>javascript/css</title>
-    <link rel="stylesheet" type="text/css" href="../../public/css/styles.css">   
-	<!-- Custom fonts for this template-->
-	<link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-	<!-- Custom styles for this template-->
-	<link href="../../public/css/sb-admin-2.min.css" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
+<style>
+  .flex-container {
+    display: flex;
+    height: 400px;
+    background-color: red;
+	  flex-wrap: wrap;
+    align-items: center;
+  }
 
+  .flex-container div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+	background-color: green;
+    text-align: center;
+	color: white;
+	margin: 5px;
+  }
 
+</style>
 
+<body>  
+  <div class="flex-container">
+    <div style="order: 3">Flex 1</div>
+    <div style="order: 4">Flex 2</div>
+    <div style="order: 5">Flex 3</div>
+    <div style="order: 2">Flex 4</div>
+    <div style="order: 1">Flex 5</div>
+  </div>
+</body>
 
-<!-- Bootstrap core JavaScript-->
-<script src="../../public/vendor/jquery/jquery.min.js"></script>
-<script src="../../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Core plugin JavaScript-->
-<script src="../../public/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for all pages-->
-<script src="../../public/js/sb-admin-2.min.js"></script>
-<script src="../../public/js/javascript.js"></script>
-
+</html>
